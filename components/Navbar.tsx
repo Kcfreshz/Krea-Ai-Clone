@@ -1,18 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { ThemeContext } from "./ThemeContext";
-import { useContext } from "react";
 
 export const Navbar = () => {
-  interface ThemeContextType {
-    theme: "light" | "dark";
-    themeToggle: () => void;
-  }
-  const { theme, themeToggle }: ThemeContextType = useContext(ThemeContext);
-
-  console.log("Current theme:", theme);
-
   return (
     <nav className="flex justify-center items-center p-4 md:justify-between">
       <div className="">
