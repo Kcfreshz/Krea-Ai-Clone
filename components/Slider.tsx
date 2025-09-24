@@ -118,19 +118,18 @@ const Slider = () => {
           key={slidesToShow[0].id}
           style={{
             backgroundImage: `url(${slidesToShow[0].imgSrc})`,
-            height: "500px",
           }}
-          className="bg-cover bg-center w-full h-[450px] md:w-[80%] md:h-[500px] rounded-3xl shadow text-white "
+          className="bg-cover bg-center w-full md:w-[80%] h-[200px] sm:h-[300px] md:h-[450px] lg:[500px]  rounded-3xl shadow text-white "
         >
-          <div className="p-5 flex flex-col justify-between gap-[270px] md:gap-80 ">
+          <div className="p-5 flex flex-col justify-between sm:gap-[150px] md:gap-72 ">
             <p>NEW IMAGE MODEL</p>
-            <div>
-              <h1 className="text-3xl font-semibold">
+            <div className="mt-13 sm:mt-0 md:mt-0s">
+              <h1 className="text-xl md:text-3xl font-semibold pb-2">
                 {slidesToShow[0].title}
               </h1>
               <div className="flex items-center">
                 <p
-                  className={`w-full md:w-[50%] text-gray-100/50 font-semibold`}
+                  className={`text-xs md:text-sm w-full md:w-[50%] text-gray-100/50 font-semibold`}
                 >
                   {slidesToShow[0].description}
                 </p>
