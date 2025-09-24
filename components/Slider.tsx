@@ -123,7 +123,7 @@ const Slider = () => {
         >
           <div className="p-5 flex flex-col justify-between sm:gap-[150px] md:gap-72 ">
             <p>NEW IMAGE MODEL</p>
-            <div className="mt-13 sm:mt-0 md:mt-0s">
+            <div className="mt-13 sm:mt-0 ">
               <h1 className="text-xl md:text-3xl font-semibold pb-2">
                 {slidesToShow[0].title}
               </h1>
@@ -145,10 +145,9 @@ const Slider = () => {
         {/* Next Slide - hidden on small screens */}
         <div
           key={slidesToShow[1].id}
-          className="hidden md:flex items-end rounded-l-3xl shadow text-white bg-cover bg-center transition-all duration-700 w-[30%]"
+          className="hidden md:flex items-end rounded-l-3xl shadow text-white bg-cover bg-center transition-all duration-700 w-[30%] h-[200px] sm:h-[300px] md:h-[450px] lg:[500px]"
           style={{
             backgroundImage: `url(${slidesToShow[1].imgSrc})`,
-            height: "500px",
           }}
         >
           <div className="pl-5 pb-10">
@@ -161,7 +160,7 @@ const Slider = () => {
       </div>
 
       {/* Dot Navigation */}
-      <div className="flex justify-center items-center gap-2 mt-8">
+      <div className="flex justify-center items-center gap-2 pt-3 md:pl-[450px]">
         {sliderData.map((_, index) => (
           <div
             key={index}
@@ -174,7 +173,7 @@ const Slider = () => {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex justify-end items-center gap-1 md:pr-10 -mt-5 ">
+      <div className="flex justify-end items-center gap-1 md:pr-10 -mt-3 ">
         <button
           onClick={prevSlide}
           className=" bg-gray-400/40 hover:bg-gray-700/60 text-white p-1 rounded-full transition"
