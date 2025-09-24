@@ -113,7 +113,7 @@ const Slider = () => {
   return (
     <div className="p-5 md:p-0 md:pl-10  overflow-hidden ">
       {/* Slider Container */}
-      <div className="flex justify-center gap-13 transition-all duration-700 ease-in-out">
+      <div className="flex justify-center gap-10 transition-all duration-700 ease-in-out">
         <div
           key={slidesToShow[0].id}
           style={{
@@ -160,7 +160,7 @@ const Slider = () => {
       </div>
 
       {/* Dot Navigation */}
-      <div className="flex justify-center items-center gap-2 pt-3 md:pl-[450px]">
+      <div className="flex justify-center items-center gap-2 pt-3 md:pl-[300px]">
         {sliderData.map((_, index) => (
           <div
             key={index}
