@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Navbar = () => {
   return (
-    <nav className="flex justify-center items-center p-4 md:justify-between">
+    <nav className="flex justify-center items-center p-10 md:justify-between">
       <div className="">
         <div className="hidden items-center gap-6 md:flex">
           <Image src="/logo.svg" alt="Home page logo" width={20} height={20} />
