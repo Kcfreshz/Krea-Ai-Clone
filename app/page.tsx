@@ -1,10 +1,12 @@
 import { Navbar } from "@/components/Navbar";
 import Slider from "@/components/Slider";
+import Actions from "@/components/Actions";
 export default function Home() {
   return (
-    <div className="md:m-10s md:border-gray-100 md:border shadow ">
+    <div className="md:m-10 md:border-gray-100 md:border shadow ">
       <Navbar />
       <Slider />
+      <Actions />
     </div>
   );
 }
