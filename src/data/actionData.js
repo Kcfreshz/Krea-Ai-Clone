@@ -38,7 +38,7 @@ const actionData = [
     id: 6,
     title: "Video Lipsync",
     featured: "New",
-    description: "Lip sync any video to any audio in seconds.",
+    description: "Lip sync any video to any audio.",
     imgSrc: "/icons/lipsync.svg",
   },
   {

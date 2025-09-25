@@ -17,18 +17,19 @@ const Actions = () => {
           <span className="-mt-1">Show all</span>
         </div>
       </div>
-      <section className="grid grid-cols-2 md:grid-cols-4 gap-10 w-full">
+      <section className="grid grid-cols-2 md:grid-cols-4 gap-7 w-full">
         {actionData.map((action) => (
-          <div key={action.id} className="flex ">
-            <div className="flex gap-3">
+          <div key={action.id}>
+            <div className="flex gap-2">
               <Image
                 src={action.imgSrc}
                 alt={action.title}
-                width={60}
-                height={60}
+                width={40}
+                height={40}
+                className="hidden md:block"
               />
-              <div className="">
-                <h5 className="text-xl font-bold text-gray-500">
+              <div className="flex-1">
+                <h5 className="text-[10px] sm:text-sm font-bold text-gray-500 mb-2 md:mb-0">
                   {action.title}{" "}
                   {action.featured && (
                     <span className="text-white ml-2 py-1 px-2 text-[10px] font-semibold   rounded-full bg-blue-600">
@@ -37,11 +38,13 @@ const Actions = () => {
                   )}
                 </h5>
                 <div className="flex justify-between items-center">
-                  <p className="w-[70%]">{action.description}</p>
+                  <p className="w-[110px] sm:w-[200px] sm:text-[12px] text-[10px] text-gray-400">
+                    {action.description}
+                  </p>
 
                   <Link
                     href=""
-                    className="-mt-10 py-1 px-4 text-sm font-semibold   rounded-full bg-[#f5f3f3]  cursor-pointer"
+                    className="-mt-0 sm:-mt-10 py-1 px-4 text-sm font-semibold   rounded-full bg-[#f5f3f3]  cursor-pointer"
                   >
                     Open
                   </Link>
