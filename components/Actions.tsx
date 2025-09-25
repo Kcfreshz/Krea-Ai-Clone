@@ -46,7 +46,7 @@ const Actions = () => {
 
                   <Link
                     href=""
-                    className="py-1 px-4 text-sm font-semibold rounded-full bg-[#f5f3f3] cursor-pointer 
+                    className="py-1 px-2 text-sm font-semibold rounded-full bg-[#f5f3f3] cursor-pointer 
 hover:bg-gray-200 active:scale-95 transition-all duration-200 self-start sm:self-auto"
                   >
                     Open

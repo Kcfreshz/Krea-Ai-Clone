@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <!-- rounded square background -->
+  <rect x="0" y="0" width="40" height="40" rx="8" ry="8" fill="#101317"/>
+  <!-- stylized "K" -->
+  <g fill="#ffffff" transform="translate(10,8)">
+    <rect x="0" y="0" width="4" height="20" rx="1.5"/>
+    <rect x="6" y="0" width="4" height="10" rx="1.5" transform="skewY(-18)"/>
+    <path d="M6 10 L16 20 L12 22 L2 12 Z"/>
+  </g>
+</svg>
