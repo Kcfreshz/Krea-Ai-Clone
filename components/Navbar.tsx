@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Navbar = () => {
   return (
-    <nav className="flex justify-center items-center p-10 md:justify-between">
+    <nav className="flex flex-wrap justify-center items-center px-4 py-4 md:px-10 md:py-10 md:justify-between">
       <div className="">
         <div className="hidden items-center gap-6 md:flex">
           <Image src="/logo.svg" alt="Home page logo" width={20} height={20} />
@@ -97,7 +97,7 @@ export const Navbar = () => {
         </span>
 
         <span className="rounded-xl bg-[#f5f3f3] p-2">
-          <Image src="/glow.svg" alt="Glow Icon" width={30} height={30} />
+          <Image src="/glow.svg" alt="Glow Icon" width={20} height={20} />
         </span>
       </div>
     </nav>

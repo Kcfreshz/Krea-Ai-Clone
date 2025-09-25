@@ -6,15 +6,17 @@ const Actions = () => {
   return (
     <section className="w-full flex flex-col gap-3 my-15 px-5 md:px-10">
       <div className=" flex justify-between items-center w-full">
-        <h2 className="text-2xl font-bold text-gray-700 ">Generate</h2>
+        <h2 className="text-xl md:text-2xl font-bold text-gray-700 ">
+          Generate
+        </h2>
         <div className="text-blue-700 flex items-center cursor-pointer">
           <Image
             src="/dropdown-blue.svg"
             alt="draw down icon"
-            width={20}
-            height={20}
+            width={18}
+            height={18}
           />
-          <span className="-mt-1">Show all</span>
+          <span className="-mt-1 text-[13px]">Show all</span>
         </div>
       </div>
       <section className="grid grid-cols-2 md:grid-cols-4 gap-7 w-full">

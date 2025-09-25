@@ -111,7 +111,7 @@ const Slider = () => {
   ];
 
   return (
-    <div className="p-5 md:p-0 md:pl-10  overflow-hidden ">
+    <div className="p-5 md:p-0 md:pl-10 overflow-hidden">
       {/* Slider Container */}
       <div className="flex justify-center gap-10 transition-all duration-700 ease-in-out">
         <div
