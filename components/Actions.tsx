@@ -37,14 +37,15 @@ const Actions = () => {
                     </span>
                   )}
                 </h5>
-                <div className="flex justify-between items-center">
-                  <p className="w-[110px] sm:w-[200px] sm:text-[12px] text-[10px] text-gray-400">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
+                  <p className="flex-1 sm:text-[12px] text-[10px] text-gray-400 break-words">
                     {action.description}
                   </p>
 
                   <Link
                     href=""
-                    className="-mt-0 sm:-mt-10 py-1 px-4 text-sm font-semibold   rounded-full bg-[#f5f3f3]  cursor-pointer"
+                    className="py-1 px-4 text-sm font-semibold rounded-full bg-[#f5f3f3] cursor-pointer 
+hover:bg-gray-200 active:scale-95 transition-all duration-200"
                   >
                     Open
                   </Link>
