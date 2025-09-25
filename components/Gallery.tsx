@@ -8,15 +8,15 @@ const Gallery = () => {
       <div className="flex gap-5">
         <Link
           href=""
-          className="flex items-center gap-2 rounded-xl bg-[#f5f3f3] p-2 hover:bg-gray-200 active:scale-95 transition-all duration-200"
+          className="flex items-center gap-2 rounded-xl bg-[#f5f3f3] py-1 px-2 hover:bg-gray-200 active:scale-95 transition-all duration-200"
         >
           <Image src="/legal.svg" alt="Legal Icon" width={18} height={18} />
-          <p>Legal</p>
+          <p className="text-sm">Legal</p>
         </Link>
 
         <Link
           href=""
-          className="flex gap-2 items-center rounded-xl bg-[#f5f3f3] p-2 hover:bg-gray-200 active:scale-95 transition-all duration-200"
+          className="flex gap-2 items-center rounded-xl bg-[#f5f3f3] py-1 px-2 hover:bg-gray-200 active:scale-95 transition-all duration-200"
         >
           <Image
             src="/pricetag.svg"
@@ -24,7 +24,7 @@ const Gallery = () => {
             width={18}
             height={18}
           />
-          <p>Price</p>
+          <p className="text-sm">Price</p>
         </Link>
       </div>
     </div>
