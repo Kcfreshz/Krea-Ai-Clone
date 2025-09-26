@@ -1,9 +1,8 @@
 import Image from "next/image";
 import actionData, { ActionItem } from "@/src/data/actionData";
 import Link from "next/link";
-import { FC } from "react";
 
-const Actions: FC = () => {
+const Actions = () => {
   return (
     <section className="w-full flex flex-col gap-3 my-15 px-5 md:px-10">
       <div className=" flex justify-between items-center w-full">

@@ -2,9 +2,8 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import sliderData from "@/src/data/sliderData";
-import { FC } from "react";
 
-const Slider: FC = () => {
+const Slider = () => {
   const [activeSlide, setActiveSlide] = useState<number>(0);
 
   // Auto slide change every 5 seconds

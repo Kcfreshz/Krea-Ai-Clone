@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
 
 const enum Routes {
   HOME = "/",
@@ -30,7 +29,7 @@ const mainLinks: NavLink[] = [
   { href: Routes.ASSEST, icon: "/asseticon.svg", alt: "Asset Icon" },
 ]; // Array of objects for the link data
 
-export const Navbar: FC = () => {
+export const Navbar = () => {
   return (
     <nav className="flex flex-col gap-4 md:flex-row md:justify-between items-center px-4 py-4 md:px-10 md:py-6">
       <div>
@@ -94,9 +93,6 @@ export const Navbar: FC = () => {
             height={20}
           />
         </button>
-        <button className="rounded-xl bg-[#f5f3f3] p-2 hover:bg-gray-200 active:scale-95 transition-all duration-200 cursor-pointer">
-          <Image src="/moon.svg" alt="Dark Mode Icon" width={20} height={20} />
-        </button>
 
         <button className="rounded-xl bg-[#f5f3f3] p-2 hover:bg-gray-200 active:scale-95 transition-all duration-200 cursor-pointer">
           <Image src="/sun.svg" alt="Light Mode Icon" width={20} height={20} />
@@ -112,6 +108,3 @@ export const Navbar: FC = () => {
     </nav>
   );
 };
-// className="p-2 rounded-xl hover:bg-gray-200 active:scale-95 transition-all duration-200"
-
-// "bg-white p-1.5  rounded-xl hover:bg-gray-200 active:scale-95 transition-all duration-200";
