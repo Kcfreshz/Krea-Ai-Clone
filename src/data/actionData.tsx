@@ -1,4 +1,12 @@
-const actionData = [
+export interface ActionItem {
+  id: number;
+  title: string;
+  description: string;
+  imgSrc: string;
+  featured?: string; // This is optional because not all items have it
+}
+
+const actionData: readonly ActionItem[] = [
   {
     id: 1,
     title: "Image",

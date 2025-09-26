@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FC } from "react";
 
-const Footer = () => {
+const Footer: FC = () => {
   return (
     <footer className="flex flex-col md:flex-row justify-between items-center w-full bg-[#3a3a3a] px-5 md:px-10 py-5 gap-4">
       <div className="flex flex-col md:flex-row gap-3 md:gap-5 items-center">
-        <Link href="">
+        <Link href="/" className="opacity-80">
           <Image src="/footerlogo.svg" alt="logo" width={40} height={40} />
         </Link>
         <h5 className="text-xl md:text-3xl font-bold text-white text-center md:text-left">
@@ -16,7 +17,7 @@ const Footer = () => {
 
       <div className="flex flex-col md:flex-row items-center gap-1 text-white">
         <p className="text-lg md:text-2xl font-bold">curated by</p>
-        <Link href="">
+        <Link href="/" className="opacity-80">
           <Image
             src="/mobbinlogo.svg"
             alt="mobbin logo"

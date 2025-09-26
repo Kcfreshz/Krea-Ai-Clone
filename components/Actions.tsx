@@ -1,8 +1,9 @@
 import Image from "next/image";
-import actionData from "@/src/data/actionData";
+import actionData, { ActionItem } from "@/src/data/actionData";
 import Link from "next/link";
+import { FC } from "react";
 
-const Actions = () => {
+const Actions: FC = () => {
   return (
     <section className="w-full flex flex-col gap-3 my-15 px-5 md:px-10">
       <div className=" flex justify-between items-center w-full">
@@ -20,7 +21,7 @@ const Actions = () => {
         </div>
       </div>
       <section className="grid grid-cols-2 md:grid-cols-4 gap-7 w-full">
-        {actionData.map((action) => (
+        {actionData.map((action: ActionItem) => (
           <div key={action.id}>
             <div className="flex gap-2">
               <Image
