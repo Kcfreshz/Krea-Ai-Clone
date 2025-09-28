@@ -69,7 +69,7 @@ export const Navbar = () => {
       <div className=" flex items-center gap-4 md:flex">
         <Link
           href="/"
-          className="flex gap-2 rounded-xl bg-[#f5f3f3] py-1 px-2 hover:bg-gray-200 active:scale-95 transition-all duration-200"
+          className="flex justify-center items-center gap-2 rounded-xl bg-[#f5f3f3] py-1 px-2 hover:bg-gray-200 active:scale-95 transition-all duration-200"
         >
           <Image
             src="/galleryedit-icon.svg"
@@ -77,15 +77,15 @@ export const Navbar = () => {
             width={20}
             height={20}
           />
-          <p className="text-sm">Gallery</p>
+          <p className="text-[10px]">Gallery</p>
         </Link>
 
         <Link
           href=""
-          className="flex gap-2 rounded-xl bg-[#f5f3f3] py-1 px-2  hover:bg-gray-200 active:scale-95 transition-all duration-200"
+          className="flex justify-between items-center gap-2 rounded-xl bg-[#f5f3f3] py-1 px-2  hover:bg-gray-200 active:scale-95 transition-all duration-200"
         >
           <Image src="/support.svg" alt="Support Icon" width={20} height={20} />
-          <p className="text-sm">Support</p>
+          <p className="text-[10px]">Support</p>
         </Link>
 
         <button className="rounded-xl bg-[#f5f3f3] p-2 hover:bg-gray-200 active:scale-95 transition-all duration-200 cursor-pointer">
