@@ -4,11 +4,9 @@ import Link from "next/link";
 
 const Actions = () => {
   return (
-    <section className="w-full flex flex-col gap-3 my-15 px-5 md:px-10">
+    <section className="w-full flex flex-col gap-3 my-15 px-5 md:px-10 dark:text-black">
       <div className=" flex justify-between items-center w-full">
-        <h2 className="text-xl md:text-2xl font-bold text-gray-700 ">
-          Generate
-        </h2>
+        <h2 className="text-xl md:text-2xl font-bold ">Generate</h2>
         <div className="text-blue-700 flex items-center cursor-pointer">
           <Image
             src="/dropdown-blue.svg"
@@ -46,7 +44,7 @@ const Actions = () => {
 
                   <Link
                     href=""
-                    className="py-1 px-2 text-sm font-semibold rounded-full bg-[#f5f3f3] cursor-pointer 
+                    className="py-1 px-2 text-sm font-semibold rounded-full text-gray-950 bg-[#f5f3f3] cursor-pointer 
 hover:bg-gray-200 active:scale-95 transition-all duration-200 self-start sm:self-auto"
                   >
                     Open

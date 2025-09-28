@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Roboto } from "next/font/google";
+// import ThemeProvider from "@/components/ThemeProvider";
+import { ThemeProvider } from "next-themes";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -19,8 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className}`}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${roboto.className}`}>
+        <ThemeProvider >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

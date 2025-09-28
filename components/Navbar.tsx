@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 const enum Routes {
   HOME = "/",
@@ -30,15 +31,17 @@ const mainLinks: NavLink[] = [
 ]; // Array of objects for the link data
 
 export const Navbar = () => {
+  // const { theme, toggleTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
   return (
-    <nav className="flex flex-col gap-4 md:flex-row md:justify-between items-center px-4 py-4 md:px-10 md:py-6">
+    <nav className="sticky top-0 z-50 flex flex-col text-gray-950 gap-4 md:flex-row md:justify-between items-center px-4 py-4 md:px-10 md:py-6 ">
       <div>
         <div className="hidden items-center gap-6 md:flex">
           <Image src="/logo.png" alt="Home page logo" width={60} height={60} />
 
           <div className="flex items-center gap-2">
             <Image src="/glow.svg" alt="glow image" width={20} height={20} />
-            <span>benevolentaicreation</span>
+            <span className="text-gray-400">benevolentaicreation</span>
             <Image
               src="/dropdown.svg"
               alt="draw down icon"
@@ -48,7 +51,7 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-4 py-1 pl-1 pr-3 rounded-xl bg-[#f5f3f3] md:gap-6">
+      <div className="flex items-center gap-4 py-1 pl-1 pr-3 rounded-xl bg-[#f5f3f3] dark:bg-gray-600 md:gap-6">
         {mainLinks.map((link, index) => (
           <Link
             key={index}
@@ -94,8 +97,25 @@ export const Navbar = () => {
           />
         </button>
 
-        <button className="rounded-xl bg-[#f5f3f3] p-2 hover:bg-gray-200 active:scale-95 transition-all duration-200 cursor-pointer">
-          <Image src="/sun.svg" alt="Light Mode Icon" width={20} height={20} />
+        <button
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          className="rounded-xl bg-[#f5f3f3] p-2 hover:bg-gray-200 active:scale-95 transition-all duration-200 cursor-pointer"
+        >
+          {theme === "dark" ? (
+            <Image
+              src="/sun.svg"
+              alt="Light Mode Icon"
+              width={20}
+              height={20}
+            />
+          ) : (
+            <Image
+              src="/moon.svg"
+              alt="Light Mode Icon"
+              width={20}
+              height={20}
+            />
+          )}
         </button>
 
         <Link
